@@ -504,6 +504,33 @@ line-height: 55px;
     display: none;
 }
 
+.mobile-application {
+    display: none;
+}
+
+
+.main-navigation [type="checkbox"] {
+    display: none;
+}
+
+.main-navigation label.toggleMenu {
+    display: none;
+    padding: 40px 77px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    font-size: 30px;
+    color: white;
+}
+
+.main-navigation label.toggleMenu .fa {
+    position: absolute;
+    top: 30px;
+    left: 12px;
+    font-size: 60px;
+    color: white;
+}
+
 
 @media screen and (max-width: 1025px) {
 
@@ -876,30 +903,91 @@ line-height: 55px;
         color: #FFFFFF;
     }
 
+    .main-navigation-wrapper {
+        height: 130px;
+    }
+
+    .header-title {
+        font-size: 45px;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+
+    .header-description {
+        font-size: 35px;
+    }
+
+
+    header {
+        height: 1300px;
+    }
+
+    .title-advantages {
+        margin-top: 180px;
+    }
+
+    .title-gallery {
+        margin-top: 180px;
+    }
+
+    
+    .site-navigation {
+        visibility: visible;
+
+    }
+
+    .mobile-application {
+        display: block;
+    }
+
+    .main-navigation ul {
+        display: none;
+    }
+
+    .main-navigation label.toggleMenu {
+        display: block;
+    }
+
+    input.toggleMenu:checked + label.toggleMenu {
+
+    }
+
+    input.toggleMenu:checked ~ ul {
+        display: block;
+    }
+
+    .main-navigation > ul li {
+        display: block;
+        background: rgb(201,201,201); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); /* IE6-9 */
+
+        padding: 15px 30px 15px 40px;
+        font-size: 14px;
+        color: #454547;
+        text-decoration: none;
+        text-transform:uppercase;
+        transition: all 0.3s ease;
+    }
+
+    .site-navigation {
+        position: absolute;
+        top: 114px;
+        width: 938px;
+       
+    }
+
+    .main-navigation-wrapper {
+
+    }
+
+
     
     
     }
 
-    /* @media screen and (min-width: 320px) and (max-width: 1024px) { 
-        .footer-wrapper .footer-column3 li {
-            display: none;
-            }
-
-            .footer-wrapper ul li {
-                font-size: 12px;
-            }
-
-            .footer-wrapper {
-                justify-content: left;
-                flex-wrap: nowrap;
-            }
-
-            .footer-column1 {
-                margin-left: 50px;
-            }
-
-
-    } */
 
 
 
